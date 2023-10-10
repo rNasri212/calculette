@@ -1,0 +1,7 @@
+E:\calculette\calculette\bin\Debug\calculette.exe.config
+E:\calculette\calculette\bin\Debug\calculette.exe
+E:\calculette\calculette\bin\Debug\calculette.pdb
+E:\calculette\calculette\obj\Debug\calculette.csproj.AssemblyReference.cache
+E:\calculette\calculette\obj\Debug\calculette.csproj.CoreCompileInputs.cache
+E:\calculette\calculette\obj\Debug\calculette.exe
+E:\calculette\calculette\obj\Debug\calculette.pdb
