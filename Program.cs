@@ -9,6 +9,14 @@ namespace calculette
 {
     internal class Program
     {
+        public static int add(int x, int y)
+        { return x + y;  }
+        public static int sus(int x, int y)
+        { return x - y; }
+        public static int mul(int x, int y)
+        { return x * y; }
+        public static int div(int x, int y)
+        { return x / y; }
         static void Main(string[] args)
         /* Rayan Nasri
             * etml¨
@@ -16,28 +24,40 @@ namespace calculette
             * 10.10.2023
             */
         {
+          
+            int x ;
+            int y ;
+            char op = '+';
 
-            int ch1;
-            int ch2;
             Console.WriteLine("calculette"); 
             Console.WriteLine("premier chiffre ");
-            ch1 = Convert.ToInt32(Console.ReadLine());
+            x = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("deuxieme chiffre ");
-            ch2 = Convert.ToInt32(Console.ReadLine());
-
-            switch ((ch1)
-)
+            y = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Add(+) Sous(-) Mult(*) Div(/)");
+            op = Convert.ToChar(Console.ReadLine());
+           
+            switch(op)
             {
-                case 1:
-                    Console.WriteLine();
+                case '+':
+                    Console.WriteLine(add(x, y));
                     break;
-                case 2:
-                    Console.WriteLine();
-                    break;
-                default:
-                    break;
-            }
 
+                case '-':
+                    Console.WriteLine(sus(x, y));
+                    break;
+
+                case '*':
+                    Console.WriteLine(mul(x, y));
+                    break;
+
+                case '/':
+                    Console.WriteLine(div(x, y));
+                    break;
+                default: Console.WriteLine("error");
+                    break;           
+            }
+            Console.ReadKey();
 
 
 
