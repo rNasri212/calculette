@@ -42,6 +42,7 @@ namespace calculette
                 y = Convert.ToInt32(Console.ReadLine());
                 Console.WriteLine("Add(+) Sous(-) Mult(*) Div(/)");
                 op = Convert.ToChar(Console.ReadLine());
+
                 /* ^switch 
                  * le switch serre a choisirre le tipe d'opération
                  */
@@ -67,8 +68,9 @@ namespace calculette
                         break;
                 }
                 Console.WriteLine("Voulez-vous effectuer un autre calcul ? (O/N)");
-                userChoice = Convert.ToChar(Console.ReadLine()); ;
-            } while (userChoice == 'O' || userChoice == 'o');
+                userChoice = Convert.ToChar(Console.ReadLine()); 
+                Console.Clear();
+            }while (userChoice == 'y' || userChoice == 'n');
             
 
 
